@@ -10,6 +10,7 @@ Custom skills for Claude Code.
 | `/review` | Check code for bugs, edge cases, and goal alignment |
 | `/cleanup` | Refactor code to follow best practices and clean up docs |
 | `/pr` | Commit with conventional commits and create a draft PR |
+| `/frontend-design` | Create distinctive, production-grade frontend interfaces |
 
 ## Installation
 
