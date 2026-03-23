@@ -24,17 +24,24 @@ You are preparing and submitting code changes as a proper contribution. This mea
 
 ### 1. Pre-Flight Checks
 
-Before doing anything, verify:
+Always start from a fresh `main` branch:
 
 ```bash
-git status  # What's changed?
-git diff    # What are we committing?
+git status        # capture current state
+git stash         # stash if dirty (skip if clean)
+git checkout main
+git pull origin main
+git checkout -b <branch-name>   # derive from changes/intent
+git stash pop     # restore changes if stash was created
 ```
+
+Derive the branch name from the staged changes or user intent (e.g. `feat/add-oauth-login`). Use kebab-case, prefixed with the conventional commit type.
 
 **Stop and ask the user if:**
 - Working directory is clean (nothing to commit)
 - There are unrelated changes mixed in
-- You're on main/master branch (should be on feature branch)
+- Branch name cannot be derived from context (ask for one)
+- `git stash pop` produces conflicts
 
 ### 2. Create Commits
 
