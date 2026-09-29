@@ -11,6 +11,7 @@ Custom skills for Claude Code.
 | `/cleanup` | Refactor code to follow best practices and clean up docs |
 | `/pr` | Commit with conventional commits and create a draft PR |
 | `/frontend-design` | Create distinctive, production-grade frontend interfaces |
+| `/interface-cheat-sheet` | Refine UI polish, motion, accessibility, typography, color, and copy |
 
 ## Installation
 
